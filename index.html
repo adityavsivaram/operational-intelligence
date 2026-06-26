@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operational Intelligence | The Blind Spot Problem</title>
+<meta name="description" content="Interactive Operational Intelligence demonstration exploring safer operational decisions in ERP- and AI-supported environments.">
+<style>
+:root{
+--bg:#f8fafc;--card:#fff;--text:#111827;--muted:#6b7280;--accent:#2563eb;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{padding:70px 20px;background:linear-gradient(135deg,#eef5ff,#fff)}
+.container{max-width:1100px;margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:40px}
+.logo{font-weight:700;font-size:1.2rem}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+h1{font-size:3rem;margin:.2em 0}
+.lead{font-size:1.2rem;color:var(--muted)}
+.btn{display:inline-block;padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:600;margin:8px 8px 0 0}
+.primary{background:var(--accent);color:#fff}
+.secondary{border:2px solid var(--accent);color:var(--accent)}
+.hero-card{background:#fff;padding:24px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+section{padding:70px 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;padding:22px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.06);transition:.25s}
+.card:hover{transform:translateY(-6px)}
+.steps{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-weight:600}
+.step{background:#fff;padding:18px 22px;border-radius:10px;min-width:170px;text-align:center}
+footer{padding:40px 20px;text-align:center;color:var(--muted);background:#fff}
+@media(max-width:800px){
+.hero{grid-template-columns:1fr}
+h1{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">Operational Intelligence</div>
+<div>Version 1.0</div>
+</nav>
+
+<div class="hero">
+<div>
+<h1>The Blind Spot Problem</h1>
+<p class="lead">
+Making safer operational decisions in ERP- and AI-supported environments.
+</p>
+<p>
+Modern ERP systems explain <strong>what happened</strong>.
+Modern AI predicts <strong>what is likely to happen</strong>.
+Operational leaders still need to answer:
+<strong>Should we execute this decision?</strong>
+</p>
+
+<a class="btn primary" href="demo/index.html">Launch Interactive Demo</a>
+<a class="btn secondary" href="docs/The_Blind_Spot_Problem.pdf" target="_blank" rel="noopener noreferrer">Read Research Paper</a>
+<a class="btn secondary" href="video/demo_video.mp4" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+</div>
+
+<div class="hero-card">
+<h3>Try it in under 5 minutes</h3>
+<div class="steps">
+<div class="step">Upload CSV</div>
+<div class="step">Analyze</div>
+<div class="step">Review Decision</div>
+</div>
+<p style="margin-top:20px">
+✓ Runs entirely in your browser<br>
+✓ No installation<br>
+✓ No login<br>
+✓ No cloud upload<br>
+✓ Data remains on your device
+</p>
+</div>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2>The Business Problem</h2>
+<p>
+Organizations increasingly rely on ERP dashboards and AI-assisted recommendations.
+While these technologies improve visibility and prediction, they do not determine
+whether an operational decision should actually be executed.
+This demonstration explores that decision gap through an Operational Intelligence methodology.
+</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Operational Intelligence Methodology</h2>
+<div class="cards">
+<div class="card">
+<h3>CIIP</h3>
+<p>If a vendor or input fails, what else breaks with it &mdash; concentration of exposure weighted by how fragile that vendor actually is.</p>
+</div>
+
+<div class="card">
+<h3>OVIS</h3>
+<p>Do we even know what is happening right now &mdash; how long, and how unpredictably, an outcome stays unknown after a record is created.</p>
+</div>
+
+<div class="card">
+<h3>POIS</h3>
+<p>Could we have seen this coming &mdash; whether an upstream signal genuinely leads downstream defects or delays, not just correlates with them.</p>
+</div>
+
+<div class="card">
+<h3>ODEX</h3>
+<p>Acts as the governance layer to determine whether a recommendation should be executed.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Project Resources</h2>
+<div class="cards">
+<div class="card">
+<h3>Interactive Demonstration</h3>
+<p>Experience the methodology directly in your browser.</p>
+<p><a class="btn primary" href="demo/index.html">Launch Demo</a></p>
+</div>
+
+<div class="card">
+<h3>Research Paper</h3>
+<p>Read <em>The Blind Spot Problem</em>.</p>
+<p><a class="btn primary" href="docs/The_Blind_Spot_Problem.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></p>
+</div>
+
+<div class="card">
+<h3>Walkthrough Video</h3>
+<p>Watch the complete demonstration.</p>
+<p><a class="btn primary" href="video/demo_video.mp4" target="_blank" rel="noopener noreferrer">Watch Video</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>About</h2>
+<p><strong>Aditya V. Sivaram Poduri</strong></p>
+<p>
+Independent research in Operational Intelligence, Operational Decision Systems,
+Supply Chain Analytics and AI Governance.
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 Aditya V. Sivaram Poduri · Operational Intelligence Demonstration v1.0
+</footer>
+
+</body>
+</html>
